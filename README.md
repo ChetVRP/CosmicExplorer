@@ -1,22 +1,42 @@
 # Cosmic Explorer
 
-Interactive, science-informed astronomy laboratory for exploring the Solar System, heliosphere, Milky Way, galaxy groups and clusters, gravitational structures and the cosmic web.
+**Interactive astronomy laboratory — v0.23.0-rc.3 (Galaxy Structure Lab)**
 
-## Website
+Authored and compiled by **Chetan Ladwa**.
 
-The self-contained browser application is in [`index.html`](./index.html). When GitHub Pages is enabled, the expected address is `https://chetvrp.github.io/CosmicExplorer/`.
+**Live website:** https://chetvrp.github.io/CosmicExplorer/
 
-## Features
+**Current release status:** Public **release candidate** (not final v0.23.0). This is the previously reviewed local v0.23 RC3 website published as a single self-contained `index.html`. Full 2MRS ingestion and some real-device visual/performance checks remain open.
 
-- Interactive 3D exploration with 2D fallback where WebGL 2 is unavailable
-- Responsive navigation for desktop, tablet and mobile
-- Object inspector, astronomical clock, playback controls, scientific and illustrative layers
-- Local astronomical catalogue importing
+## Explore
 
-## Scientific scope
+The complete browser app lives in [index.html](./index.html), supports WebGL2 with a Canvas 2D fallback, and can also be saved and opened offline in supported browsers. It retains the eight scenes: Cosmic Web; Superclusters & Flows; Galaxy Clusters; Local Group; Milky Way; Heliosphere; Solar System; Earth.
 
-Many models and motion effects are educational approximations rather than physical simulations. The inspector identifies source-based and illustrative content. Use the scientific references in the application when assessing individual claims.
+Features incorporated across the v0.22–v0.23 development programme:
 
-## Release
+- Interactive astronomy objects, object search, selection, inspector and observational-source links.
+- Planetary Keplerian orbit geometry based on JPL planetary elements, with teaching exaggeration distinctly labelled. Planet sizes and spacing in the overview remain compressed/enlarged for readability; these are not JPL Horizons ephemerides.
+- Newtonian gravity demonstration and the previously available educational gravitational-fabric views.
+- **Galaxy Structure Lab (RC3):** optional structure/depth overlays and conceptual motion tracers for Local Group, galaxy clusters and superclusters; guided camera exploration; richer ChromaRead-inspired explanations at Explorer, Student and Research depths.
+- Contextual **Data & Evidence** inspector, distinguishing older educational figures from newly validated measurements or missing catalogue data.
+- Offline self-contained HTML, responsive desktop/tablet/mobile design.
 
-Initial GitHub-hosted code: Cosmic Explorer v0.21.1. No commercial licence or third-party redistribution permissions are granted by default.
+## Source integrity and scientific limitations
+
+- The newer overlays are **educational illustrations**, not registered observations or measured galaxy velocity trajectories. The supercluster flow displays are model interpretations, not direct measurements.
+- This build does **not** include the complete merged 2MRS observational catalogue. The planned source-data acquisition and reconciliation are pending.
+- Some distances and galaxy features are approximate, compiled from heterogeneous sources, or reconstructed schematically; see the in-app inspector for individual reference links.
+- Real-device WebGL2 **RC3-specific** verification and further accessibility/performance testing are pending. Earlier versions were verified on an Android tablet using WebGL2.
+- No third-party asset redistribution licence is implied by publication of the repository.
+
+## Version history
+
+| Version | Reference | Description |
+| --- | --- | --- |
+| `v0.21.1` | [archive/v0.21.1](../../tree/archive/v0.21.1) | Original published baseline, preserved before update |
+| `v0.23.0-rc.3` | `main` | First published RC3 candidate with orbital realism, object search/evidence and Galaxy Structure Lab |
+| `v0.23.0` | Planned | Final release after outstanding verification and catalogue decisions |
+
+See [CHANGELOG.md](./CHANGELOG.md) and [the RC3 release record](./docs/RELEASE_v0.23.0-rc.3.md).
+
+**Versioning policy:** `vMAJOR.MINOR.PATCH` for stable releases; `-rc.N` for release candidates. Git commits record every repository edit; named version references are maintained separately. GitHub branch `archive/v0.21.1` preserves the old version. A formal GitHub Release/tag for this RC can be added through the GitHub Releases UI.
