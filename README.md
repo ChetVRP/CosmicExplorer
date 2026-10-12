@@ -1,12 +1,19 @@
 # Cosmic Explorer
 
-**Interactive astronomy laboratory — v0.23.0-rc.3 (Galaxy Structure Lab)**
+**Interactive astronomy laboratory — v0.24 Pass 24.6B (Guided Scene Journeys)**
 
 Authored and compiled by **Chetan Ladwa**.
 
 **Live website:** https://chetvrp.github.io/CosmicExplorer/
 
-**Current release status:** Public **release candidate** (not final v0.23.0). This is the previously reviewed local v0.23 RC3 website published as a single self-contained `index.html`. Full 2MRS ingestion and some real-device visual/performance checks remain open.
+**Current release status:** Public development preview of v0.24 Pass 24.6B; not a fully validated stable release. The previous v0.23.0-rc.3 is preserved at `archive/v0.23.0-rc.3-pre-24.6b`. Full 2MRS ingestion, scientific reconciliation, native WebGL2, device and accessibility checks remain open.
+
+## New in v0.24 Pass 24.6B
+
+- Guided discovery tours in the eight astronomical environments: Next, Previous, Play/Pause, route progress and return-to-start.
+- Integrated searchable Cosmic Hierarchy and relationship-aware ChromaRead contextual inspector from Pass 24.6.
+- Research-only / illustrative objects remain distinguished from true 3D camera destinations. Cross-scale transitions are labelled context changes, not literal measured flights.
+- 11 curated tour routes with 85 stop instances, the first integrated implementation of the larger Pass 24.6A proposed 23-preset journey plan.
 
 ## Explore
 
@@ -34,7 +41,8 @@ Features incorporated across the v0.22–v0.23 development programme:
 | Version | Reference | Description |
 | --- | --- | --- |
 | `v0.21.1` | [archive/v0.21.1](../../tree/archive/v0.21.1) | Original published baseline, preserved before update |
-| `v0.23.0-rc.3` | `main` | First published RC3 candidate with orbital realism, object search/evidence and Galaxy Structure Lab |
+| `v0.23.0-rc.3` | `archive/v0.23.0-rc.3-pre-24.6b` | Previous published RC3 preserved before 24.6B update |
+| `v0.24 Pass 24.6B` | `main` | Published development preview: hierarchy, ChromaRead context and guided scene journeys |
 | `v0.23.0` | Planned | Final release after outstanding verification and catalogue decisions |
 
 See [CHANGELOG.md](./CHANGELOG.md) and [the RC3 release record](./docs/RELEASE_v0.23.0-rc.3.md).
